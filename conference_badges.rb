@@ -12,12 +12,17 @@ end
 
 def assign_rooms(array)
 new_array = []
-counter = 1
-  array.each do |name|
-  new_array <<  "Hello, #{name}! You'll be assigned to room #{counter}!"
-    counter += 1
-  end
-  new_array
+array.each_with_index do |name, index|
+  new_array << "Hello, #{name}! You'll be assigned to room #{index}!"
+end
+new_array
+# new_array = []
+# counter = 1
+#   array.each do |name|
+#   new_array <<  "Hello, #{name}! You'll be assigned to room #{counter}!"
+#     counter += 1
+#   end
+#   new_array
 end
 
 def printer(array)
